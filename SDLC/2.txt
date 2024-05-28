@@ -1,0 +1,66 @@
+Assignment 2: Requirements Gathering - Conduct a 30-minute mock interview to gather requirements for a fictional app that helps organize community events. 
+Summarize the requirements and how you would document and trace them in a one-page brief.
+
+Solution:
+
+Mock Interview Transcript: Requirements Gathering for Community Events Food Delivery App:
+
+Interviewer (You):** Good morning! Thank you for joining me today. Let's start by discussing your involvement in community events and how food delivery plays a role.
+
+**Interviewee (Fictional Community Events Organizer):** Hi! I'm excited to be here. In our community events, food plays a significant role. We often host festivals, picnics, and fundraisers where attendees expect a variety of food options.
+
+**Interviewer:** That sounds like a wonderful community engagement opportunity. What challenges do you face regarding food logistics during these events?
+
+**Interviewee:** One challenge is ensuring that we have a diverse range of food vendors available to cater to different tastes and dietary preferences. Coordinating with vendors, managing orders, and ensuring timely delivery can be quite hectic.
+
+**Interviewer:** Understood. So, you're looking for a food delivery app tailored to the needs of community events. Can you outline the specific features you're envisioning?
+
+**Interviewee:** Absolutely. Firstly, we need a platform where event organizers can browse and select from a curated list of food vendors. The app should allow vendors to showcase their menus, availability, and pricing.
+
+**Interviewer:** Great. Let's break that down further. For event organizers, what functionalities would be essential in the app?
+
+**Interviewee:** Event organizers should be able to:
+1. Browse and search for food vendors by cuisine type and availability.
+2. View vendor profiles with menus, pricing, and reviews.
+3. Place orders for catering services directly through the app.
+4. Track order statuses and delivery schedules in real-time.
+
+**Interviewer:** Excellent. Now, for the food vendors themselves, what capabilities would they require?
+
+**Interviewee:** Vendors should be able to:
+1. Create profiles with detailed information about their offerings.
+2. Manage their menus, availability, and pricing.
+3. Receive and manage orders placed by event organizers.
+4. Communicate with organizers regarding order details and logistics.
+
+**Interviewer:** Got it. In terms of logistics and delivery, what considerations should we take into account?
+
+**Interviewee:** Timely delivery is crucial, so the app should include features for:
+1. Efficient order dispatch and routing.
+2. Real-time tracking of delivery drivers.
+3. Coordination between vendors, drivers, and event organizers to ensure smooth operations.
+
+**Interviewer:** Thank you for providing such valuable insights. I'll document these requirements and trace them in a one-page brief for our development team.
+
+---
+
+**One-Page Brief: Requirements for Community Events Food Delivery App**
+
+**Objective:** Develop a food delivery app tailored to the needs of community events, facilitating seamless coordination between event organizers and food vendors.
+
+**Requirements:**
+
+1. **For Event Organizers:**
+   - Browse and search for food vendors.
+   - View vendor profiles with menus and pricing.
+   - Place orders and track delivery statuses.
+
+2. **For Food Vendors:**
+   - Create profiles with menu details.
+   - Manage menu items, availability, and pricing.
+   - Receive and manage orders from organizers.
+
+3. **Logistics and Delivery:**
+   - Efficient order dispatch and routing.
+   - Real-time tracking of delivery drivers.
+   - Coordination between vendors, drivers, and organizers.

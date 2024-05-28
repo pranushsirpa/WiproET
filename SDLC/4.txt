@@ -1,0 +1,45 @@
+Assignment 4: Scrum Framework Overview - Prepare a one-page cheat sheet on the Scrum framework that includes roles, responsibilities, artifacts, and ceremonies. 
+Provide a brief example of a Sprint task list for the earlier mentioned app project.
+
+Solution:
+
+Scrum is a management framework that teams use to self-organize and work towards a common goal. It describes a set of meetings, tools, and roles for efficient
+ project delivery. Much like a sports team practicing for a big match, Scrum practices allow teams to self-manage, learn from experience, and adapt to change. 
+Software teams use Scrum to solve complex problems cost effectively and sustainably. 
+
+Scrum Framework Cheat Sheet
+
+Roles:
+
+Product Owner: Represents stakeholders, prioritizes backlog items, and ensures the team delivers value.
+Scrum Master: Facilitates the Scrum process, removes impediments, and fosters a collaborative team environment.
+Development Team: Self-organizing group responsible for delivering increments of working product.
+
+Responsibilities:
+
+Product Owner: Defines product vision, creates and maintains the product backlog, and accepts or rejects completed work.
+Scrum Master: Coaches the team on Scrum principles, facilitates meetings, and shields the team from external distractions.
+Development Team: Estimates tasks, selects work for the sprint, collaborates on solutions, and delivers a potentially shippable product increment.
+
+Artifacts:
+
+Product Backlog: Prioritized list of all desired features, enhancements, and fixes for the product.
+Sprint Backlog: Subset of the product backlog items selected for the sprint, along with tasks and commitments.
+Increment: The sum of all product backlog items completed during a sprint, potentially shippable and ready for review.
+
+Ceremonies:
+
+Sprint Planning: Collaboratively plans the work to be done in the sprint, including selecting backlog items and defining tasks.
+Daily Stand-up: Brief daily meeting where team members synchronize activities, discuss progress, and identify any impediments.
+Sprint Review: Demo of the completed work from the sprint, gathering feedback from stakeholders.
+Sprint Retrospective: Reflective meeting where the team discusses what went well, what could be improved, and actions for the next sprint.
+
+Example Sprint Task List:
+Implement user authentication feature
+Design event scheduling interface
+Develop database schema for storing event data
+Create API endpoints for managing event details
+Integrate payment gateway for ticket sales
+Conduct usability testing on event registration flow
+Optimize app performance for faster loading times
+Write documentation for deploying the app to production.

@@ -1,0 +1,74 @@
+Assignment 1: SDLC Overview - Create a one-page infographic that outlines the SDLC phases (Requirements, Design, Implementation, Testing, Deployment), 
+highlighting the importance of each phase and how they interconnect.
+
+Solution:
+
+Software Development Life Cycle (SDLC) Overview:
+1. **Requirements**
+   - Gathering client needs.
+   - Understanding user expectations.
+   - Documenting project scope.
+
+2. **Design**
+   - Architectural planning.
+   - Creating system blueprints.
+   - User interface (UI) design.
+
+3. **Implementation**
+   - Writing code.
+   - Building software components.
+   - Integrating functionalities.
+
+4. **Testing**
+   - Quality Assurance (QA) checks.
+   - Identifying bugs and issues.
+   - Ensuring software meets specifications.
+
+5. **Deployment**
+   - Launching the product.
+   - Releasing updates and patches.
+   - User training and support.
+
+**Importance of Each Phase:**
+
+- **Requirements:** Sets the foundation for the project, ensuring alignment between client expectations and development outcomes.
+  
+- **Design:** Shapes the blueprint of the software, guiding developers in creating a structured and efficient system.
+  
+- **Implementation:** Translates designs into functioning software, where code is written and features are built.
+  
+- **Testing:** Crucial for identifying and fixing defects, ensuring the software meets quality standards before deployment.
+  
+- **Deployment:** Marks the culmination of development efforts, launching the software for users while providing ongoing support and updates.
+
+Interconnected Phases:
+
+- Continuous Feedback Loop: Each phase provides insights and feedback for the next, ensuring alignment with project goals and client expectations.
+  
+- Iterative Development: Allows for adjustments and improvements throughout the cycle, enhancing the quality and functionality of the software.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

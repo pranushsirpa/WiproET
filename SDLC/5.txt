@@ -1,0 +1,63 @@
+Assignment 1: Agile Project Planning - Create a one-page project plan for a new software feature using Agile planning techniques. Include backlog items 
+with estimated story points and a prioritized list of user stories.
+
+Solution:
+**Agile Project Plan: New Software Feature**
+
+**Project Overview:**
+Developing a new feature for the community event app that enables users to create and share customizable event invitations.
+
+**Backlog Items with Estimated Story Points:**
+
+1. **User Story:** As a user, I want to create event invitations with customizable templates.
+   - **Story Points:** 5
+
+2. **User Story:** As a user, I want to personalize event details (date, time, location) on the invitation.
+   - **Story Points:** 3
+
+3. **User Story:** As a user, I want to add images or graphics to the invitation.
+   - **Story Points:** 5
+
+4. **User Story:** As a user, I want to invite attendees via email or social media.
+   - **Story Points:** 8
+
+5. **User Story:** As a user, I want to track RSVPs and manage guest lists.
+   - **Story Points:** 8
+
+6. **User Story:** As a user, I want to send reminders to invited guests.
+   - **Story Points:** 3
+
+**Prioritized List of User Stories:**
+
+1. **Create event invitations with customizable templates (5 SP)**
+2. **Invite attendees via email or social media (8 SP)**
+3. **Track RSVPs and manage guest lists (8 SP)**
+4. **Add images or graphics to the invitation (5 SP)**
+5. **Personalize event details (date, time, location) on the invitation (3 SP)**
+6. **Send reminders to invited guests (3 SP)**
+
+**Next Steps:**
+1. **Sprint Planning Meeting:** Select backlog items for the upcoming sprint based on team capacity and priorities.
+2. **Development:** Implement selected user stories, focusing on delivering value incrementally.
+3. **Daily Stand-up Meetings:** Collaborate daily to discuss progress, address any obstacles, and ensure alignment.
+4. **Sprint Review:** Demo completed work to stakeholders and gather feedback.
+5. **Sprint Retrospective:** Reflect on the sprint, identify areas for improvement, and adjust processes accordingly.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

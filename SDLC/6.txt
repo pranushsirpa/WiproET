@@ -1,0 +1,44 @@
+Assignment 2: Daily Standup Simulation - Write a script for a Daily Standup meeting for a development team working on the software feature from Assignment 1. 
+Address a common challenge and incorporate a solution into the communication flow.
+
+Solution:
+**Daily Standup Meeting Script**
+
+**Facilitator:** Good morning, team! Let's begin our daily standup meeting. As usual, let's go around and share our updates and any blockers we're facing. I'll start.
+
+**Facilitator:** Yesterday, I worked on implementing the user authentication feature for the event app. I encountered a challenge with integrating the 
+authentication library, but managed to resolve it with some assistance from our backend developer. Today, I'll be focusing on writing unit tests for the authentication
+ module.
+
+**Developer 1:** Thanks, [Facilitator]. Yesterday, I continued working on designing the event scheduling interface. I faced a roadblock when trying to finalize the 
+layout for mobile devices. However, I reached out to our UI/UX designer, and we collaborated to come up with a solution. Today, I'll be refining the design and 
+starting to code the frontend functionality.
+
+**Developer 2:** Hi everyone. Yesterday, I started developing the database schema for storing event data. I ran into an issue with setting up the database migrations,
+ but after some troubleshooting and guidance from [Facilitator], I was able to fix it. Today, I'll be completing the database setup and moving on to creating API 
+endpoints for managing event details.
+
+**Facilitator:** Thank you for the updates. It's great to see collaboration in overcoming challenges. Now, let's address the common challenge we've been encountering 
+with ensuring consistent communication between frontend and backend development teams. To tackle this, let's schedule a brief sync-up meeting at midday where both 
+teams can discuss progress, share insights, and address any integration issues promptly. This will help us stay aligned and minimize delays in feature development.
+
+**Developer 1:** That sounds like a good plan. Having a dedicated time slot for cross-team communication will definitely help us streamline our workflow and address
+ any issues early on.
+
+**Developer 2:** Agreed. It's important for both teams to have a clear understanding of each other's progress and dependencies. I think the midday sync-up meeting
+ will be beneficial for improving collaboration and reducing bottlenecks.
+
+**Facilitator:** Excellent. I'll coordinate with both teams to schedule the midday sync-up meeting starting from tomorrow. Let's ensure we make the most out of this 
+opportunity to enhance our communication and accelerate our progress. 
+
+**Developer 1:** Just a reminder to keep the lines of communication open. If anyone encounters any blockers or needs assistance, don't hesitate to reach out to the 
+team for support.
+
+**Developer 2:** Absolutely. Let's continue to support each other and work together towards achieving our sprint goals.
+
+**Facilitator:** Well said. Thank you, everyone, for your contributions and collaboration. Let's have a productive day! If there are no further questions, 
+we can adjourn the meeting.
+
+**Team:** Thank you. Have a great day!
+
+**Facilitator:** Meeting adjourned.
