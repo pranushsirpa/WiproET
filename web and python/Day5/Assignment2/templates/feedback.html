@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h2>Feedback</h2>
+    <form method="POST" action="{{ url_for('feedback') }}">
+        {{ form.hidden_tag() }}
+        <div>
+            {{ form.feedback_type.label }}
+            {{ form.feedback_type(size=32) }}
+            {% for error in form.feedback_type.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+        <div>
+            {{ form.comment.label }}
+            {{ form.comment(cols=50, rows=5) }}
+            {% for error in form.comment.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+        <div>
+            {{ form.submit() }}
+        </div>
+    </form>

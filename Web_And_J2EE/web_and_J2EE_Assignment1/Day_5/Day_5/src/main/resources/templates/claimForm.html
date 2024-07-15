@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User Claim Form</title>
+</head>
+<body>
+<h1>User Claim Form</h1>
+<form th:action="@{/userclaim}" th:object="${userClaim}" method="post">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" th:field="*{name}"/>
+        <div th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</div>
+    </div>
+    <div>
+        <label for="amount">Amount:</label>
+        <input type="text" id="amount" th:field="*{amount}"/>
+        <div th:if="${#fields.hasErrors('amount')}" th:errors="*{amount}">Amount Error</div>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>

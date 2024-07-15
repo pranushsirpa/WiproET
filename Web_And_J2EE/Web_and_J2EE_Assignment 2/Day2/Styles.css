@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+main {
+    background: white;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#map {
+    height: 400px;
+    background: #ddd;
+}
+
+#route-options {
+    margin-top: 2em;
+}
+
+#routes-list li {
+    cursor: pointer;
+}

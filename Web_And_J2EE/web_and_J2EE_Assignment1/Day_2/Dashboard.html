@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policy Management Dashboard</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Policies
+                        </a>
+                    </li>
+                    <!-- Add more navigation items as needed -->
+                </ul>
+            </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <h1 class="h2">Dashboard</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            Policies
+                        </div>
+                        <div class="card-body">
+                            <!-- Add sorting buttons in table header -->
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Policy Name <button class="btn btn-link sort-btn" data-sort="name">Sort</button></th>
+                                        <th scope="col">Policy Holder <button class="btn btn-link sort-btn" data-sort="holder">Sort</button></th>
+                                        <th scope="col">Premium <button class="btn btn-link sort-btn" data-sort="premium">Sort</button></th>
+                                        <th scope="col">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Policy rows will be populated dynamically -->
+                                </tbody>
+                            </table>
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#policyModal">
+                                Add Policy
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="policyModal" tabindex="-1" role="dialog" aria-labelledby="policyModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="policyModalLabel">New Policy</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!-- Form fields for policy details -->
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="policyName">Policy Name</label>
+                                                    <input type="text" class="form-control" id="policyName" placeholder="Enter policy name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="policyHolder">Policy Holder</label>
+                                                    <input type="text" class="form-control" id="policyHolder" placeholder="Enter policy holder name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="premium">Premium</label>
+                                                    <input type="number" class="form-control" id="premium" placeholder="Enter premium amount">
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Save Policy</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>

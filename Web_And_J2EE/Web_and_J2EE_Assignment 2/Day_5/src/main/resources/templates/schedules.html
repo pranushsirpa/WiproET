@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Schedules</title>
+</head>
+<body>
+    <h1>Schedules</h1>
+    <form th:action="@{/admin/schedules}" th:object="${schedule}" method="post">
+        <select th:field="*{route.id}">
+            <option th:each="route : ${routes}" th:value="${route.id}" th:text="${route.name}"></option>
+        </select>
+        <input type="datetime-local" th:field="*{departureTime}" placeholder="Departure Time"/>
+        <input type="datetime-local" th:field="*{arrivalTime}" placeholder="Arrival Time"/>
+        <button type="submit">Add Schedule</button>
+    </form>
+    <table>
+        <tr>
+            <th>Route</th>
+            <th>Departure Time</th>
+            <th>Arrival Time</th>
+        </tr>
+        <tr th:each="schedule : ${schedules}">
+            <td th:text="${schedule.route.name}">Route Name</td>
+            <td th:text="${schedule.departureTime}">Departure Time</td>
+            <td th:text="${schedule.arrivalTime}">Arrival Time</td>
+        </tr>
+    </table>
+</body>
+</html>

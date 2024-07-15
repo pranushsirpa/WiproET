@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time Traffic Alerts</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js" integrity="sha512-GLsL/NikG1sPHl3Vv5lGlx9J0z7bJY/9Xfe6UKJ9Oiq8lARjoQ8jim7SZw1vTbS3JpSfR2+gt5MPzspXUjUkig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        var socket = io.connect('http://' + document.domain + ':' + location.port);
+
+        socket.on('connect', function() {
+            console.log('Connected');
+        });
+
+        socket.on('new_traffic_alert', function(data) {
+            console.log('New traffic alert:', data);
+    
+        });
+
+        function sendTrafficAlert() {
+            var location = document.getElementById('location').value;
+            var message = document.getElementById('message').value;
+            socket.emit('send_traffic_alert', {'location': location, 'message': message});
+        }
+    </script>
+</head>
+<body>
+    <h1>Real-time Traffic Alerts</h1>
+
+    <form onsubmit="event.preventDefault();">
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location">
+        <label for="message">Message:</label>
+        <input type="text" id="message" name="message">
+        <button onclick="sendTrafficAlert()">Send Alert</button>
+    </form>
+
+</body>
+</html>

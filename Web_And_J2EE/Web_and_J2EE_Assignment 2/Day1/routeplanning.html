@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Transportation Route Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>City Transportation Route Planner</h1>
+    </header>
+    <main>
+        <form id="route-form">
+            <label for="start-location">Start Location:</label>
+            <input type="text" id="start-location" name="start-location" required>
+
+            <label for="end-location">End Location:</label>
+            <input type="text" id="end-location" name="end-location" required>
+
+            <button type="button" id="plan-route">Plan Route</button>
+        </form>
+        <section id="route-options">
+            <h2>Available Routes</h2>
+            <ul id="routes-list">
+                <!-- Route options will be dynamically added here -->
+            </ul>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

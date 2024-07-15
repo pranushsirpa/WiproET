@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Routes</title>
+</head>
+<body>
+    <h1>Routes</h1>
+    <form th:action="@{/admin/routes}" th:object="${route}" method="post">
+        <input type="text" th:field="*{name}" placeholder="Name"/>
+        <input type="text" th:field="*{startLocation}" placeholder="Start Location"/>
+        <input type="text" th:field="*{endLocation}" placeholder="End Location"/>
+        <button type="submit">Add Route</button>
+    </form>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Start Location</th>
+            <th>End Location</th>
+        </tr>
+        <tr th:each="route : ${routes}">
+            <td th:text="${route.name}">Route Name</td>
+            <td th:text="${route.startLocation}">Start Location</td>
+            <td th:text="${route.endLocation}">End Location</td>
+        </tr>
+    </table>
+</body>
+</html>

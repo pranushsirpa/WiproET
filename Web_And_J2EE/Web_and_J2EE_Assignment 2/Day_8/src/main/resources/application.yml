@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/trafficdb
+    username: root
+    password: yourpassword
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/trafficdb
+    username: root
+    password: yourpassword
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    initialization-mode: always
+
+  main:
+    web-application-type: reactive
+
+logging:
+  level:
+    org.springframework.web: DEBUG
+    org.springframework.data.r2dbc: DEBUG
+    com.example.trafficalert: DEBUG

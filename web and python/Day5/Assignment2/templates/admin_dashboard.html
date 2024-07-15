@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+    
+    <h2>Routes</h2>
+    <ul>
+        {% for route, schedules in routes.items() %}
+        <li>{{ route }}</li>
+        <ul>
+            {% for time in schedules %}
+            <li>{{ time }}</li>
+            {% endfor %}
+        </ul>
+        <form method="POST" action="{{ url_for('manage_schedules', route_name=route) }}">
+            <label for="schedule_time">Add Schedule:</label>
+            <input type="text" id="schedule_time" name="schedule_time" required>
+            <button type="submit">Add</button>
+        </form>
+        {% endfor %}
+    </ul>
+    
+    <h2>Add Route</h2>
+    <form method="POST" action="{{ url_for('manage_routes') }}">
+        <input type="text" name="route_name" placeholder="Route Name" required>
+        <button type="submit">Add Route</button>
+    </form>
+    
+    <h2>Incident Reporting</h2>
+    <a href="{{ url_for('report_incident') }}">Report an Incident</a>
+    
+    <h2>Feedback</h2>
+    <a href="{{ url_for('feedback') }}">Give Feedback</a>
+</body>
+</html>

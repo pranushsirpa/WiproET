@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Traffic Alerts</title>
+</head>
+<body>
+    <h1>Traffic Alerts</h1>
+    <div id="alerts"></div>
+    <script type="text/javascript">
+        const socket = new WebSocket('ws://localhost:8080/ws/alerts');
+
+        socket.onmessage = function(event) {
+            const alert = JSON.parse(event.data);
+            const alertDiv = document.createElement('div');
+            alertDiv.textContent = `Alert: ${alert.message} at ${alert.timestamp}`;
+            document.getElementById('alerts').appendChild(alertDiv);
+        };
+
+        function sendAlert(alert) {
+            socket.send(JSON.stringify(alert));
+        }
+    </script>
+</body>
+</html>

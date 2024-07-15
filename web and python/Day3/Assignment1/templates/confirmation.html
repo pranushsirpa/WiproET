@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Claim Confirmation</title>
+</head>
+<body>
+    <h1>Claim Submitted Successfully</h1>
+    <p>Policy Number: {{ claim.policy_number }}</p>
+    <p>Claimant Name: {{ claim.claimant_name }}</p>
+    <p>Date of Loss: {{ claim.date_of_loss }}</p>
+    <p>Description: {{ claim.description }}</p>
+    <a href="{{ url_for('index') }}">Return to Home</a>
+</body>
+</html>

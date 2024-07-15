@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manage Schedules - {{ route_name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h2>Manage Schedules - {{ route_name }}</h2>
+    
+    <h3>Current Schedules:</h3>
+    <ul>
+        {% for time in schedules %}
+        <li>{{ time }}</li>
+        {% endfor %}
+    </ul>
+    
+    <h3>Add Schedule</h3>
+    <form method="POST" action="{{ url_for('manage_schedules', route_name=route_name) }}">
+        <label for="schedule_time">Schedule Time:</label>
+        <input type="text" id="schedule_time" name="schedule_time" required>
+        <button type="submit">Add Schedule</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Feedback</title>
+</head>
+<body>
+    <h1>Feedback</h1>
+    <form th:action="@{/admin/feedback}" th:object="${feedback}" method="post">
+        <input type="text" th:field="*{username}" placeholder="Username"/>
+        <textarea th:field="*{comment}" placeholder="Comment"></textarea>
+        <button type="submit">Submit Feedback</button>
+    </form>
+    <table>
+        <tr>
+            <th>Username</th>
+            <th>Comment</th>
+            <th>Submitted At</th>
+        </tr>
+        <tr th:each="feedback : ${feedbacks}">
+            <td th:text="${feedback.username}">Username</td>
+            <td th:text="${feedback.comment}">Comment</td>
+            <td th:text="${feedback.submittedAt}">Submitted At</td>
+        </tr>
+    </table>
+</body>
+</html>

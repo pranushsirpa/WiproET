@@ -1,0 +1,10 @@
+eureka:
+  instance:
+    hostname: localhost
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: file://${user.home}/claim-processing/config-repo

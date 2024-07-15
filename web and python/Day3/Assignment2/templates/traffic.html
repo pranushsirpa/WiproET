@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Real-Time Traffic Data</title>
+</head>
+<body>
+    <h1>Real-Time Traffic Data</h1>
+    <p>Current traffic on {{ traffic.route }}: {{ traffic.current_traffic }}</p>
+    <h2>Alternative Routes:</h2>
+    <ul>
+        {% for route in traffic.alternative_routes %}
+            <li>{{ route }}</li>
+        {% endfor %}
+    </ul>
+    <p><a href="/">Back to Home</a></p>
+</body>
+</html>

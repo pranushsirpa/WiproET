@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Transit Maps</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOVYRIgupAurZup5y1PRh8Ismb1A3lLao&libraries=places&callback=initMap" async defer></script>
+</head>
+<body>
+    <div class="container">
+        <header class="my-4">
+            <h1 class="text-center">Interactive Transit Maps</h1>
+        </header>
+        <main>
+            <form id="route-form" class="form-inline justify-content-center mb-4">
+                <div class="form-group mx-2">
+                    <label for="start-location" class="sr-only">Start Location</label>
+                    <input type="text" id="start-location" class="form-control" placeholder="Start Location" required>
+                </div>
+                <div class="form-group mx-2">
+                    <label for="end-location" class="sr-only">End Location</label>
+                    <input type="text" id="end-location" class="form-control" placeholder="End Location" required>
+                </div>
+                <button type="button" id="plan-route" class="btn btn-primary mx-2">Plan Route</button>
+            </form>
+            <div id="map" class="mb-4">
+                <!-- Interactive map will be embedded here -->
+            </div>
+            <section id="route-options">
+                <h2 class="text-center">Available Routes</h2>
+                <ul id="routes-list" class="list-group">
+                    <!-- Route options will be dynamically added here -->
+                </ul>
+            </section>
+        </main>
+    </div>
+    <div class="modal fade" id="transitModal" tabindex="-1" aria-labelledby="transitModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="transitModalLabel">Real-time Transit Data</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p id="transit-data">Loading...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

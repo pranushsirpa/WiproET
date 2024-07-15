@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit Claim</title>
+</head>
+<body>
+    <h2>Submit Claim Form</h2>
+    <form action="{{ url_for('claim_form') }}" method="POST">
+        <label for="claim_number">Claim Number:</label>
+        <input type="text" id="claim_number" name="claim_number" required><br><br>
+        
+        <label for="claim_details">Claim Details:</label><br>
+        <textarea id="claim_details" name="claim_details" rows="4" cols="50" required></textarea><br><br>
+        
+        <button type="submit">Submit Claim</button>
+    </form>
+</body>
+</html>

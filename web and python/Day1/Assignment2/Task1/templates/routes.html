@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Routes- City Transportation Route Planner{% endblock %}
+
+{% block content %}
+<h2>Planned Route</h2>
+<p><strong>From:</strong>{{start}}</p>
+<p><strong>To:</strong>{{destination}}</p>
+
+<div id="route-display">
+
+</div>
+<a href="{{url_for('index')}}" class="btn btn-secondary mt-3">Plan Another Route</a>
+{% endblock %}

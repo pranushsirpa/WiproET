@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Report Incident</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h2>Report Incident</h2>
+    <form method="POST" action="{{ url_for('report_incident') }}">
+        {{ form.hidden_tag() }}
+        <div>
+            {{ form.incident_type.label }}
+            {{ form.incident_type(size=32) }}
+            {% for error in form.incident_type.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+        <div>
+            {{ form.details.label }}
+            {{ form.details(cols=50, rows=5) }}
+            {% for error in form.details.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+        <div>
+            {{ form.submit() }}
+        </div>
+    </form>
+</body>
+</html>

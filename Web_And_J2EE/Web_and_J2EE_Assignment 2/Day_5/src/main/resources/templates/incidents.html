@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Incidents</title>
+</head>
+<body>
+    <h1>Incidents</h1>
+    <form th:action="@{/admin/incidents}" th:object="${incident}" method="post">
+        <textarea th:field="*{description}" placeholder="Description"></textarea>
+        <button type="submit">Report Incident</button>
+    </form>
+    <table>
+        <tr>
+            <th>Description</th>
+            <th>Reported At</th>
+        </tr>
+        <tr th:each="incident : ${incidents}">
+            <td th:text="${incident.description}">Description</td>
+            <td th:text="${incident.reportedAt}">Reported At</td>
+        </tr>
+    </table>
+</body>
+</html>
